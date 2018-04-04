@@ -1,0 +1,35 @@
+/* body {
+  background:url('./img/moon-landing1.svg') no-repeat;
+  background-size: 1200px;
+  background-color: #070707;
+} */
+
+.button-lg {
+  display:block;
+  margin:auto;
+}
+
+.logo {
+  filter:drop-shadow(4px 4px 8px rgba(0,0,0,.8)) !important;
+}
+
+.button-shade {
+  filter:drop-shadow(4px 4px 8px rgba(0,0,0,.8)) !important;
+}
+
+.form_color {
+  background:none;
+  border: 1px solid #181818 !important
+}
+
+.footer {
+
+}
+
+p {
+  color: #333;
+}
+
+a {
+  color: #333;
+}

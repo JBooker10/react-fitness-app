@@ -1,0 +1,57 @@
+#chart {
+    background-color: transparent;
+	border: none;
+}
+
+text {
+  fill: white;
+}
+
+text.bar-label {
+  fill: white;
+  font-size:10px;
+}
+
+
+
+.domain {
+  display:none;
+}
+
+rect.bar:nth-child(even) {
+  fill: #9933CC !important;
+  stroke: #000;
+  stroke-width: 1px !important;
+}
+
+
+
+rect.bar:nth-child(odd) {
+  fill: #AD5BD6 !important;
+  stroke: #000;
+  stroke-width: 1px !important;
+}
+
+.bar {
+	shape-rendering: crispEdges;
+}
+
+.bar-label{
+    fill: #000;
+	text-anchor: middle;
+	font-size: 18px;
+}
+
+.axis path,
+.axis line {
+	fill: none;
+	shape-rendering: crispEdges;
+}
+
+.gridline path,
+.gridline line{
+	fill: none;
+	stroke-width: 0;
+  z-index:-2 !important;
+	shape-rendering: crispEdges;
+}

@@ -1,0 +1,159 @@
+{
+"data" : [
+ {
+    "exercise_name" : "Barbell Squat",
+    "description" : "The squat is a strength-building lower body exercise. It is executed by placing a weighted barbell across your shoulders, then using your legs to lower and raise your body. The movement resembles the act of repeatedly sitting in and standing from a chair. There are many physiological benefits to performing squats regularly. In fact, many athletes view this movement as the most effective exercise for developing total-body strength.",
+    "muscle_groups" : {
+      "muscle_1" : "Gluteus maximus",
+      "muscle_2" : "Quadriceps femoris ",
+      "muscle_3" : "Hamstrings",
+      "muscle_4" : "Hamstrings"
+    },
+    "function_call" : "bodyInterface.barbellSquat()",
+    "_id" : "barbell_squat",
+    "front_muscles" : [10,3,8,4,13,14,25,26,33,34,43,44],
+    "back_muscles" : [23,24,3,4,33,34,10,9,15,16,13,14]
+  },
+  {
+    "exercise_name" : "Barbell Row",
+    "description" : "Barbell Rows are a full body, compound exercise. They work your upper-back, lower back, hips and arms. They build a stronger, muscular back and bigger biceps. Barbell Rows are one of the most effective assistance exercises you can do to increase your Squat, Bench Press and Deadlift.",
+    "muscle_groups" : {
+      "muscle_1" : "Latssimus doris",
+      "muscle_2" : "Rhomboids",
+      "muscle_3" : "Trapezoids",
+      "muscle_4" : "Biceps"
+    },
+    "function_call" : "bodyInterface.barbellRows()",
+    "_id" : "barbell_row",
+    "front_muscles" : [5,6,51,56],
+    "back_muscles" : [1,2,5,6,17,18,23,24,25,26,5,6]
+  },
+  {
+    "exercise_name" : "Bench Press",
+    "description" : "The bench press is an upper body strength training exercise that consists of pressing a weight upwards from a supine position. The exercise works the pectoralis major as well as supporting chest, arm, and shoulder muscles such as the anterior deltoids, serratus anterior, coracobrachialis, scapulae fixers, trapezii, and the triceps. A barbell is generally used to hold the weight, but a pair of dumbbells can also be used.",
+    "muscle_groups" : {
+      "muscle_1" : "Pectoralis major (lower)",
+      "muscle_2" : "Pectoralis major (upper)",
+      "muscle_3" : "Anterior deltoids",
+      "muscle_4" : "Triceps brachii"
+    },
+    "function_call" : "bodyInterface.benchPress()",
+    "_id" : "bench_press",
+    "front_muscles" : [1,2,21,22,38,39,67,71],
+    "back_muscles" : [21,22,17,18,59,61]
+  },
+  {
+    "exercise_name": "Decline Bench Press",
+    "description" : "Decline bench presses mainly work your chest muscles, with some involvement of your shoulders and triceps. Your chest, or pectoral muscles, are responsible for two main actions -- flexion and adduction of your upper arm. When your pecs contract, they bring your arms toward the center of your body, with your elbows facing either out to the side or toward the floor. Your shoulder muscles also aid in flexion and adduction, and they help stabilize your shoulder joint. At the top part of the lift, your triceps -- the muscles on the back of your arms -- work to extend your arms.",
+    "muscle_groups" : {
+      "muscle_1" : "Pectoralis major (lower)",
+      "muscle_2" : "Pectoralis major (upper)",
+      "muscle_3" : "Anterior deltoids",
+      "muscle_4" : "Triceps brachii"
+    },
+    "function_call" : "bodyInterface.benchPress()",
+    "_id" : "decline_bench_press",
+    "front_muscles" : [1,2,21,22,38,39,67,71],
+    "back_muscles" : [21,22,17,18,59,61]
+  },
+  {
+    "exercise_name" : "Bicep Curls",
+    "description" : "The dumbbell biceps curl is one of the most familiar and basic exercises you can perform with a set of free weights. Although it's an easy resistance exercise, with a simple twist in variation it can be made more effective than it already is. With the correct form and technique, your biceps will feel the burn and you'll avoid potential injury along the way. Be sure to seek expert advice from a qualified trainer before engaging in this exercise or any other weightlifting exercise. Consult with your doctor before beginning any physical strenuous activity.",
+    "muscle_groups" : {
+      "muscle_1" : "Biceps",
+      "muscle_2" : "Deltoids",
+      "muscle_3" : "Brachialis",
+      "muscle_4" : "Forearms"
+    },
+    "function_call" : "bodyInterface.bicepCurls()",
+    "_id" : "bicep_curls",
+    "front_muscles" : [5,6,21,22,38,39,48,49,50,65,66,17,18],
+    "back_muscles" : [17,18,21,22,30,29,35,36,39,40,17,18,53,55,59,61]
+  },
+  {
+    "exercise_name" : "Chest Flyes",
+    "description" : "A dumbbell fly is an exercise for your upper body. To allow your elbows to move behind your torso, you should do the exercise on a bench. A dumbbell fly will primarily work muscles in your chest and shoulders; however, it will have some strengthening effect on other muscles in your back and arms as well. If you would like to incorporate some abdominal work, do the exercise on a stability ball.",
+    "muscle_groups" : {
+      "muscle_1" : "Pectoralis major (lower)",
+      "muscle_2" : "Pectoralis major (upper)",
+      "muscle_3" : "Serratus anterior",
+      "muscle_4" : "Biceps brachii"
+    },
+    "function_call" : "bodyInterface.chestFlyes()",
+    "_id" : "chest_flyes",
+    "front_muscles" : [1,2,21,22,38,39,67,71],
+    "back_muscles" : [21,22,17,18,59,61]
+  },
+  {
+    "exercise_name" : "Dumbbell Press",
+    "description": "While the dumbbell bench press is limited in the amount of weight that can be utilized when compared to the barbell bench press, this variation offers a few benefits the barbell bench press does not.",
+    "muscle_groups" : {
+      "muscle_1" : "Trapezoids(middle and lower)",
+      "muscle_2" : "Serratus anterior",
+      "muscle_3" : "Anterior deltoids",
+      "muscle_4" : "Lateral deltoids"
+    },
+    "function_call" : "bodyInterface.dumbbellPress()",
+    "_id" : "dumbbell_press",
+    "front_muscles" : [1,2,21,22,38,39,62,64,67,71,75,77,78,79,68,70],
+    "back_muscles" : [5,6,17,18,21,22,59,61,55,53]
+  },
+  {
+    "exercise_name" : "Leg Press",
+    "description": "The leg press is an exercise performed on a weight resistance machine. As a compound movement, your hip and knee joints flex, or bend, and extend to perform the exercise. Some leg press machines place your body in a declined position, with your head lower than your lower body. Other leg machines place your body in a horizontal position. Resistance can be in the form of weighted plates that are placed on the machine or a weight stack that uses a pin for resistance selection. While your hips and legs bear most of the resistance, the leg press is a safer alternative to the barbell squat, requiring your whole body to bear the weight.",
+    "muscle_groups" : {
+      "muscle_1" : "Quadriceps",
+      "muscle_2" : "Gluteals",
+      "muscle_3" : "Hamstrings",
+      "muscle_4" : "Adductors"
+    },
+    "function_call" : "bodyInterface.legPress()",
+    "_id" : "leg_press",
+    "front_muscles" : [8,10,3,4,13,14,25,26,33,34,43,44],
+    "back_muscles" : [23,24,3,4,33,34,10,9,15,16,13,14]
+  },
+  {
+    "exercise_name" : "Dumbbell Lunges",
+    "description" : "Lunges work primarily on eccentric movement, which is the deceleration of your body while you move, such as when you slow down during a sprint. In a study published in the May 2009 issue of 'Journal of Strength and Conditioning Research,' researchers at Stockholm Söder Hospital in Sweden found walking lunges improved significant hamstring strength and jumping lunges improve running speed in soccer players. Perform lunges with just your body weight before adding dumbbells.",
+    "muscle_groups" : {
+      "muscle_1" : "Rectus femoris",
+      "muscle_2" : "Vastus lateralis",
+      "muscle_3" : "Gluteus maximus",
+      "muscle_4" : "Vast medialis"
+    },
+    "function_call" : "bodyInterface.dumbbellLunges()",
+    "_id" : "dumbbell_lunges",
+    "front_muscles" : [8,10,3,4,25,26],
+    "back_muscles" : [23,24,3,4,33,34,10,9,15,16]
+  },
+  {
+    "exercise_name" : "Military Press",
+    "description" : " Only a few muscles do the majority of the work in a military press, but most your muscles should be contributing in some way. The military press differs from many exercises because you don't have any support from a bench or machine. It's important to be rigid in your legs and core because that creates a base from which you can press.",
+    "muscle_groups" : {
+      "muscle_1" : "Lattismus dorsi",
+      "muscle_2" : "Pectoralis major (upper)",
+      "muscle_3" : "Rectus abdominus",
+      "muscle_4" : "Internal Oblique"
+    },
+    "function_call" : "bodyInterface.militaryPress()",
+    "_id" : "military_press",
+    "front_muscles" : [1,2,5,54,55,6,21,22,38,39,62,64,67,71,75,77,78,79,68,70],
+    "back_muscles" : [5,6,17,18,21,22,59,61,55,53]
+  },
+  {
+    "exercise_name" : "Lateral Pulldown",
+    "description" : "The lat pulldown is a multi-joint exercise that involves movement at the elbows, shoulders and scapula. With one exercise, you work several different muscles in your upper body. The main mover is the latissimus dorsi, the largest back muscle, which extends down each side of your spine. The biceps, rear delts, rhomboids and traps are also active during the pulldown exercise.",
+    "muscle_groups" : {
+      "muscle_1" : "Infraspinatus",
+      "muscle_2" : "Brachioradialis",
+      "muscle_3" : "Posterior deltoid",
+      "muscle_4" : "Lattismus dorsi"
+    },
+    "function_call" : "bodyInterface.latPulldowns()",
+    "_id" : "lateral_pulldowns",
+    "front_muscles" : [5,6,18,17,22,21,68,70,78,79,38,39,51,56,64,62,77,75],
+    "back_muscles" : [1,2,5,6,17,18,23,24,19,20,26,25,29,30,36,35]
+  }
+
+]
+}

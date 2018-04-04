@@ -1,0 +1,10 @@
+.App-logo {
+  height:45px;
+  margin:-5px;
+}
+
+.nav-bar {
+  box-shadow: 4px 4px 8px rgba(0,0,0,.5);
+  border:none !important;
+  background-color:#0a0a0a;
+}
