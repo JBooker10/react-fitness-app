@@ -13,7 +13,7 @@ import { firebase, googleAuthProvider } from './../../firebase/firebase';
 class Intro extends Component {
 
   startLogin(){
-      return firebase.auth().signInWithPopup(googleAuthProvider);
+      return firebase.auth().signInWithRedirect(googleAuthProvider);
   }
 
   render() {
@@ -23,8 +23,6 @@ class Intro extends Component {
         <Col md="4" className=" align-self-center">
           <Fade>
           <img src={logo} className="logo" alt="" height="215" style={{display:"block", margin: "auto", padding: "3px"}} />
-
-          <h4 className="text-muted">React Fitness</h4>
           </Fade>
         <br/>
           <div className="d-inline-flex">
