@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Col, Row, Button } from 'reactstrap';
+import { Col, Row, Button, ButtonGroup } from 'reactstrap';
 import FontAwesome from 'react-fontawesome';
 import logo from './jb-logo.svg';
 import Fade from 'react-reveal/Fade';
@@ -16,6 +16,10 @@ class Intro extends Component {
       return firebase.auth().signInWithRedirect(googleAuthProvider);
   }
 
+  viewApp(){
+    return firebase.auth().signInAnonymously()
+  }
+
   render() {
     return (
       <div>
@@ -26,7 +30,10 @@ class Intro extends Component {
           </Fade>
         <br/>
           <div className="d-inline-flex">
+          <ButtonGroup>
           <Button outline color="light" onClick={ this.startLogin }><FontAwesome className="google" name="google"/>&nbsp;&nbsp;Login with Google</Button>
+          <Button  outline color="light" onClick={this.viewApp}>Continue as Guest</Button>
+          </ButtonGroup>
           </div>
         </Col>
       </Row>
