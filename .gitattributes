@@ -1,1 +1,2 @@
-*.js linguist-language=JSX
+ $ cat .gitattributes
+*.js linguist-language=React
