@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { firebase } from './../../firebase/firebase';
 import FontAwesome from 'react-fontawesome';
+import Gravatar from 'react-gravatar';
 import logo from './logo.svg';
 import '../../App.css';
 import './navbar.css';
@@ -41,6 +42,19 @@ class NavigationBar extends Component {
 
 
   render() {
+
+    let logoutButton 
+    const user = firebase.auth().currentUser
+    if(user.isAnonymous){
+      logoutButton =   <Button outline color="primary" onClick={this.logOut}>
+      Log out</Button>
+    } else {
+      logoutButton =   <div onClick={this.logOut} className="mx-3 d-flex align-content-center logout">
+      <Gravatar email={user.email} size={36} rating="pg" default={user.photoURL} className="rounded-circle d-block mx-auto" />&nbsp;&nbsp;
+      <span className="align-self-center">Log out</span></div>
+    }
+
+
     return (
       <div>
         <Navbar color="#0a0a0a" className="nav-bar fixed-top" dark expand="md">
@@ -73,7 +87,7 @@ class NavigationBar extends Component {
                 </DropdownMenu>
               </UncontrolledDropdown>
               <NavItem className="pl-1">
-                <Button outline color="primary" onClick={this.logOut}>Log out</Button>
+               {logoutButton}
               </NavItem>
             </Nav>
           </Collapse>

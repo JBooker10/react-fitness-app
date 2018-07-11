@@ -9,9 +9,9 @@
   margin:auto;
 }
 
-.logo {
+/* .logo {
   filter:drop-shadow(4px 4px 8px rgba(0,0,0,.8)) !important;
-}
+} */
 
 .button-shade {
   filter:drop-shadow(4px 4px 8px rgba(0,0,0,.8)) !important;
@@ -24,6 +24,16 @@
 
 .footer {
 
+}
+
+.rounded {
+  border-radius:20px !important;
+  padding:.5em 3em !important;
+}
+
+.rounded2 {
+  border-radius:20px !important;
+  padding:.64em 3em !important;
 }
 
 p {

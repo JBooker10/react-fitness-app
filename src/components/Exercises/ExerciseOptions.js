@@ -12,7 +12,7 @@ class ExerciseOptions extends Component {
 
         (this.props.exercises.length > 0) ?
           filteredExercises.map(
-            exercise => <ExerciseType key={exercise._id}
+            (exercise, i) =>  <ExerciseType key={exercise._id}
                                       name={exercise.exercise_name}
                                       desc={exercise.description}
                                       userSelected={this.props.userSelected}

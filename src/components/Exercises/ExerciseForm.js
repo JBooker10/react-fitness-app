@@ -27,7 +27,8 @@ class ExerciseForm extends Component {
     }
 
     handleSubmit(event){
-        firebase.database().ref(`workouts`).push({
+      let uid = firebase.auth().currentUser.uid;
+        firebase.database().ref(`workouts/${uid}`).push({
           workout: this.state.workout,
           dated: this.state.dated,
           time: this.state.time,
@@ -35,11 +36,15 @@ class ExerciseForm extends Component {
           reps: this.state.reps,
           sets: this.state.sets
         }).then(
-      this.props.alert(true, 'info'))
-      .catch((e) => (this.props.alert(true, 'danger')))
-      setTimeout( () => { this.props.alert(false, 'info')}, 4000)
+       this.props.isAuthenticated ? 
+      this.props.alert(true, 'secondary') : this.props.alert(true, 'info') )
+      .catch((e) => (this.props.alert(true, 'secondary')))
+      this.props.isAuthenticated ? 
+      setTimeout( () => { this.props.alert(false, 'secondary') }, 8000) :
+      setTimeout( () => { this.props.alert(false, 'info') }, 4000)
       event.preventDefault()
       event.stopPropagation()
+  
     }
 
     render(){

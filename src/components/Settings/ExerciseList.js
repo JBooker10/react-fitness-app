@@ -15,7 +15,8 @@ class ExerciseList extends Component {
 
 
   handleDelete(d){
-    firebase.database().ref(`workouts/${d.id}`)
+    let uid = firebase.auth().currentUser.uid;
+    firebase.database().ref(`workouts/${uid}/${d.id}`)
       .remove()
       .then(() => console.log(`data was removed`))
       .catch((e) => console.log(e))

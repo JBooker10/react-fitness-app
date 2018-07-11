@@ -15,7 +15,8 @@ class Edit extends Component {
   }
 
   componentWillMount(){
-    firebase.database().ref('workouts')
+    let uid = firebase.auth().currentUser.uid;
+    firebase.database().ref(`workouts/${uid}`)
       .once('value')
       .then(snapshot => {
         const data = [];

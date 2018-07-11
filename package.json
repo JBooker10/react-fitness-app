@@ -12,6 +12,7 @@
     "react-dom": "^16.2.0",
     "react-faux-dom": "^4.1.0",
     "react-fontawesome": "^1.6.1",
+    "react-gravatar": "^2.6.3",
     "react-moment": "^0.7.0",
     "react-reveal": "^1.2.1",
     "react-router-dom": "^4.2.2",

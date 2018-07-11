@@ -10,8 +10,8 @@ class BarChart extends Component {
               .domain(this.props.fitnessData.map(d => d.workout))
               .range([0, width]);
           const yScale = d3.scaleLinear()
-              .domain([0, d3.max(this.props.fitnessData.map(d => d.weight))])
-              .range([height, 100]);
+              .domain([25, 400])
+              .range([height, 25]);
           const colorScale = d3.scaleOrdinal(d3.schemeCategory10);
 
           chart.selectAll('.bar')
@@ -95,7 +95,7 @@ class BarChart extends Component {
 
 
           const margin = {
-              top: 100,
+              top: 50,
               bottom: 40,
               left: 80,
               right: 40
@@ -113,7 +113,6 @@ class BarChart extends Component {
       }
 
       render() {
-        console.log(this.props.fitnessData)
           return this.drawChart();
       }
   }
