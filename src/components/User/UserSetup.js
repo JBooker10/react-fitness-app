@@ -26,7 +26,11 @@ class UserSetup extends Component {
         if(user) {
             this.setState({user: user})
             }
+        if(user.isAnonymous){
+              this.setState({modal: false})
+          } 
     }
+
 
  render(){
     let name
@@ -38,9 +42,6 @@ class UserSetup extends Component {
      name = 'Anonymous'
     }
 
-    if(isAnonymous){
-        this.setState({modal: false})
-    } 
 
      return (
         <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
