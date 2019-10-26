@@ -1,0 +1,3 @@
+  command = "npm run build"
+  publish="react-fitness-app/build"
+  base = "react-fitness-app"
