@@ -6,7 +6,7 @@
     "bootstrap": "^4.0.0",
     "d3": "^5.0.0",
     "firebase": "^7.2.2",
-    "moment": "^2.21.0",
+    "moment": "^2.29.4",
     "react": "^16.2.0",
     "react-addons-update": "^15.6.2",
     "react-dom": "^16.2.0",
